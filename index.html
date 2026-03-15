@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    <title>Kushal Radia - Personal Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animation.css">
+</head>
+
+<body>
+    <div class="scroll-progress-bar" id="scroll-progress"></div>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo" style="--i: 1;">Port<span>folio</span></a>
+            <ul>
+                <li style="--i: 2;"><a href="#" class="active">Home</a></li>
+                <li style="--i: 3;"><a href="#about">About</a></li>
+                <li style="--i: 4;"><a href="#skills">Skills</a></li>
+                <li style="--i: 5;"><a href="#projects">Projects</a></li>
+                <li style="--i: 7;"><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero-container">
+        <div class="hero-image hero-image-animation">
+            <img src="./images/kushal-photo.jpg" alt="Kushal Radia">
+        </div>
+        <div class="hero-content hero-content-animation">
+            <h3 style="--i: 1;">Hello, I'm </h3>
+            <h1 style="--i: 2;">Kushal Radia</h1>
+            <h2 style="--i: 3;">And I'm a <span class="typing-text"></span></h2>
+            <p style="--i: 4;">
+                Aspiring Quant Developer focused on the synergy of AI and Financial Markets. Proficient in transforming complex mathematical models—from Linear Algebra to Differential Equations—into optimized Python and C++ code.
+            </p>
+
+            <div class="social-icons" style="--i: 5;">
+                <a href="https://www.linkedin.com/in/kushal-radia-859323378" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/yourusername" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:kushalradia2007@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                <a href="tel:+918488889434"><i class="fa-solid fa-phone"></i></a>
+            </div>
+            <div class="hero-btn" style="--i: 6;">
+                <div class="hero-btn" style="--i: 6;">
+                <div class="hero-btn" style="--i: 6;">
+                    <a href="Kushal Radia.pdf" target="_blank" class="btn">Resume</a>
+                    <a href="#contact" class="btn">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="hero-container" style="background-color: #006da011;">
+        <div class="hero-content reveal-stagger">
+            <h1 class="text-center mb-5" style="--i: 1;">About <span class="highlight">Me</span></h1>
+            <h2 class="text-center mb-5" style="--i: 2;"><span class="highlight">Aspiring Quant Developer </span></h2>
+            <p style="--i: 3;">
+                I am a Data Science and AI undergraduate at IIT Bhilai driven by the intersection of mathematics, finance, and technology. Maintaining a 9.01 CGPA, I have built a rigorous foundation in Linear Algebra and Differential Equations—concepts I actively apply to my passion for Quantitative Finance.
+            </p>
+            <p style="--i: 4;">
+                As a dedicated builder in the early stages of my journey, I focus on turning theory into code. My projects range from algorithmic trading systems and Indian IPO analysis tools to full-stack web applications. I am also deeply involved in competitive programming and DSA, where tackling complex problems continuously sharpens my algorithmic thinking.
+            </p>
+            <p style="--i: 5;">
+                I am fueled by a curiosity for market dynamics and a commitment to writing clean, scalable code. Always eager to push my limits, I am currently looking for opportunities to apply my analytical mindset to solve challenging, real-world problems.
+            </p>    
+
+            <div class="social-icons" style="--i: 6;">
+                <a href="https://www.linkedin.com/in/kushal-radia-859323378" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/yourusername" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:kushalradia2007@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                <a href="tel:+918488889434"><i class="fa-solid fa-phone"></i></a>
+            </div>
+            <div class="hero-btn" style="--i: 7;">
+    <a href="Kushal Radia.pdf" target="_blank" class="btn">Resume</a>
+</div>
+        </div>
+        <div class="hero-image reveal">
+            <img src="./images/kushal-photo.jpg" alt="Kushal Radia">
+        </div>
+    </section>
+
+    <section id="skills" class="skills-aurora-section py-5 reveal">
+        <div class="container text-center">
+            <h2 class="mb-5" style="color: #fff; font-size: 2.5rem;">Skills & <span style="color: #00D1FF;">Technologies</span></h2>
+
+            <div class="view-toggles mb-4">
+                <button class="view-btn active" id="btn-grid-view">Grid View</button>
+                <button class="view-btn" id="btn-aurora-view">Aurora View</button>
+            </div>
+
+            <div class="skills-filters mb-5" id="aurora-filters" style="display: none;">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="coding">Coding</button>
+                <button class="filter-btn" data-filter="mathematics">Mathematics</button>
+            </div>
+
+            <div class="views-container">
+                <div id="grid-view" class="view-content active text-start">
+                    </div>
+
+                <div id="aurora-view" class="view-content" style="display: none;">
+                    <div class="aurora-container">
+                        <div class="orbit-labels">
+                            <span class="label-familiar">FAMILIAR</span>
+                            <span class="label-proficient">PROFICIENT</span>
+                            <span class="label-expert">EXPERT</span>
+                        </div>
+                        
+                        <div class="orbit orbit-expert" id="orbit-expert"></div>
+                        <div class="orbit orbit-proficient" id="orbit-proficient"></div>
+                        <div class="orbit orbit-familiar" id="orbit-familiar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="container py-5 reveal">
+        <h2 class="text-center mb-5" style="color: #fff; font-size: 2.5rem;">
+            Featured <span style="color: #00D1FF;">Projects</span>
+        </h2>
+
+        <div class="row align-items-center mb-5 project-row reveal">
+            <div class="col-md-6 order-md-2 mb-4 mb-md-0">
+                <div class="project-card">
+                    <img src="C:\Users\twink\OneDrive\Desktop\Folder\Codes\FINAL PERSONAL WEBSITE\images\Sliding Game Photo.png" class="img-fluid rounded-4 shadow-lg" alt="Python Web Application">
+                </div>
+            </div>
+            <div class="col-md-6 order-md-1 px-md-5 text-md-end">
+                <h3 class="highlight mb-3">Sliding Puzzle Game</h3>
+                <p class="text-white-50 mb-4">A full-stack web application featuring a logic-based sliding puzzle with real-time state management. Built with a Flask backend, it implements a RESTful API to handle global leaderboards and persistent score storage via JSON. Deployed on PythonAnywhere, the project includes server-side routing, file I/O operations, and creating seamless asynchronous communication between the frontend and backend.</p>
+                <div class="d-flex justify-content-md-end">
+                    <a href="https://kushalradia.pythonanywhere.com/" target="_blank" class="btn project-btn">Play Here</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container py-5 reveal">
+        <h2 class="text-center mb-5" style="color: #fff; font-size: 2.5rem;">
+            Lets <span style="color: #00D1FF;">Connect !</span>
+        </h2>
+        
+        <form action="https://formspree.io/f/mjgaepeb" method="POST" class="formspree-contact">
+            <label>
+                Your email:
+                <input type="email" name="email" placeholder="john@example.com" required>
+            </label>
+            <label>
+                Your message:
+                <textarea name="message" placeholder="Hello Kushal, I'd like to talk about..." required></textarea>
+            </label>
+            
+            <div class="text-center mt-4">
+                <button type="submit" class="btn-submit">
+                    Send Message
+                </button>
+            </div>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</body>
+</html>
